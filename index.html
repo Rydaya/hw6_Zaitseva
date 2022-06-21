@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="normalise.css">
+    <title>Document</title>
+</head>
+<body>
+    <p class="elem">Click on me</p>
+
+    <p>----------------------------------------------------------------------------</p>
+
+    <div>
+        <input type="text" class="inputgettext">
+        <button class="btngettext">Get text</button>
+    </div>
+
+    <p>----------------------------------------------------------------------------</p>
+
+    <div>
+        <a href="https://www.google.com/" title="Текст первой ссылки">Текст первой ссылки</a>
+    </div>
+    <div>
+        <a href="https://www.apple.com/" title="Текст второй ссылки">Текст второй ссылки</a>
+    </div>
+    <div>
+        <a href="https://www.youtube.com/" title="Текст третьей ссылки">Текст третьей ссылки</a>
+    </div>
+
+    <p>----------------------------------------------------------------------------</p> 
+
+    <button class="removeBtn">Исчезнуть</button>
+
+    <p>----------------------------------------------------------------------------</p>
+
+    <div class="wrapper">
+        <input type="text" class="numberInput">
+        <button class="start">Start</button>
+        <div class="container">
+            <div class="round"></div>
+        </div>
+    </div>
+    <p>----------------------------------------------------------------------------</p>
+
+    <button class="btn" onclick="logDataAttr(event)">First</button>
+    <button class="btn" onclick="logDataAttr(event)" data-number="1">Second</button>
+    <button class="btn" onclick="logDataAttr(event)" data-item="0" data-test="parapragh" data-color="red">Third</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
